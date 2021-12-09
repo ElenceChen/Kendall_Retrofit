@@ -264,7 +264,7 @@ with row1_1:
 # legend 
 from PIL import Image
 # image = Image.open('C:/Users/Elence/OneDrive - Harvard University/Desktop/City Science/Project/Code/colorbar2.png')
-image = Image.open('https://github.com/ElenceChen/Kendall_Retrofit/blob/main/colorbar2.png')
+image = Image.open('https://raw.githubusercontent.com/ElenceChen/Kendall_Retrofit/main/colorbar2.png')
 st.image(image, use_column_width=True)
 
 #############################################################################
