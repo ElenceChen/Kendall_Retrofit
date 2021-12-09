@@ -42,7 +42,8 @@ RL = st.sidebar.radio('Select the retrofit level', retrofit, index=1)
 #########################################################
 #creat the new dataframe based on selection
 
-df=pd.read_csv('C:/Users/Elence/OneDrive - Harvard University/Desktop/City Science/Project/Data/kendall_new3.csv')
+# df=pd.read_csv('C:/Users/Elence/OneDrive - Harvard University/Desktop/City Science/Project/Data/kendall_new3.csv')
+df=pd.read_csv('https://github.com/ElenceChen/Kendall_Retrofit/blob/main/Kendall_new3.csv')
 
 raw_4 = []
 for i in range(len(df.geometry)):
