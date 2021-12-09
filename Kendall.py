@@ -159,35 +159,6 @@ COLOR_RANGE = [
     [255,0,0],
 ]
 
-
-# COLOR_RANGE = [[16, 39, 123],
-#  [0, 69, 142],
-#  [0, 88, 123],
-#  [0, 101, 82],
-#  [24, 109, 38],
-#  [24, 109, 40],
-#  [49, 124, 44],
-#  [72, 139, 48],
-#  [94, 155, 52],
-#  [118, 170, 55],
-#  [142, 185, 59],
-#  [167, 200, 63],
-#  [193, 215, 67],
-#  [220, 230, 73],
-#  [248, 244, 79],
-#  [255, 242, 75],
-#  [251, 225, 64],
-#  [245, 208, 55],
-#  [239, 191, 47],
-#  [232, 175, 40],
-#  [224, 158, 35],
-#  [216, 142, 30],
-#  [206, 127, 27],
-#  [196, 112, 25],
-#  [185, 97, 23],
-#  [174, 82, 22]]
-
-
 COLOR_RANGE2 = COLOR_RANGE[::-1]
 
 carbon = np.linspace(15, 2488, num=21).tolist()
@@ -292,7 +263,8 @@ with row1_1:
 ############################################################################
 # legend 
 from PIL import Image
-image = Image.open('C:/Users/Elence/OneDrive - Harvard University/Desktop/City Science/Project/Code/colorbar2.png')
+# image = Image.open('C:/Users/Elence/OneDrive - Harvard University/Desktop/City Science/Project/Code/colorbar2.png')
+image = Image.open('https://github.com/ElenceChen/Kendall_Retrofit/blob/main/colorbar2.png')
 st.image(image, use_column_width=True)
 
 #############################################################################
