@@ -5,7 +5,7 @@
 
 import csv
 import json
-from shapely.geometry import Point, Polygon
+# from shapely.geometry import Point, Polygon
 import geopandas as gpd
 import numpy as np 
 import urllib.request as ur 
