@@ -124,13 +124,13 @@ df_health = df_new[['coordinates','lat', 'lon', health]]
 df_cost_eff = df_new[['coordinates','lat', 'lon', cost_eff]]
 
 
-# df_eui.to_json (r'C:/Users/Elence/eui.json', orient = 'records')
-df_co2e.to_json (r'C:/Users/Elence/co2e.json', orient = 'records')
-df_health.to_json (r'C:/Users/Elence/health.json', orient = 'records')
+# # df_eui.to_json (r'C:/Users/Elence/eui.json', orient = 'records')
+# df_co2e.to_json (r'C:/Users/Elence/co2e.json', orient = 'records')
+# df_health.to_json (r'C:/Users/Elence/health.json', orient = 'records')
 
-file_eui = 'C:/Users/Elence/eui.json'
-file_co2e = 'C:/Users/Elence/co2e.json'
-file_health = 'C:/Users/Elence/health.json'
+# file_eui = 'C:/Users/Elence/eui.json'
+# file_co2e = 'C:/Users/Elence/co2e.json'
+# file_health = 'C:/Users/Elence/health.json'
 
 #########################################################
 # Custom color scale
@@ -243,7 +243,6 @@ with row1_1:
             'Total GHG Emissions': pdk.Layer(
                 'PolygonLayer',
                 df_eui,
-                # id="geojson", ######################
                 opacity=0.7,
                 stroked=True,
                 get_position=["lon", "lat"], 
@@ -260,7 +259,8 @@ with row1_1:
 
             "GHGe Radius": pdk.Layer(
                 "ScatterplotLayer",
-                data=pd.read_json(file_co2e),
+                data = df_co2e,
+#                 data=pd.read_json(file_co2e),
                 get_position=["lon", "lat"],
                 get_color=[130, 156, 181],
                 get_radius=co2e,
